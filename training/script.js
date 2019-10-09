@@ -158,3 +158,47 @@ false || 3, вернется 3. 3 || 4, 3 это true и поэтому сраз
 •	Чему равно 0 || "" || 2 || undefined || true || falsе ?
 Ответ: 2
 Потому что при 0 || "" возвращeться false. При 2 || true возвращаеться 2. */
+
+// Функции
+// function showFirstMessage(text) {
+//     alert(text);
+// }
+
+// showFirstMessage("Hello world");
+
+/* function calc(a,b) {
+    return (a + b);
+}
+console.log(calc(3,4));
+console.log(calc(8,4));
+
+function retVar() {
+    let num = 50;
+    return num;
+}
+
+let anotherNum = retVar();
+console.log(anotherNum); */
+
+
+/* console.log(calc(3,4));
+console.log(calc(8,4));
+
+let calc = function(a,b){
+    return (a + b);
+} */
+
+let calc = (a,b) => {a+b};
+console.log(calc(3,4));
+console.log(calc(8,4));
+
+let str = "test";
+console.log(str.length);
+
+console.log(str.toUpperCase());
+console.log(str.toLocaleLowerCase());
+
+let twelve = "12.2px";
+// console.log(Math.round(twelve));
+console.log(parseInt(twelve));
+console.log(parseFloat(twelve));
