@@ -41,12 +41,10 @@ chooseExpenses();
 
 function detectDayBudget() {
     appData.moneyPerDay = (appData.budget / 30).toFixed();
-
-    alert(`Ежедневный бюджет пользователя = ${appData.moneyPerDay}`);
+    alert("Ежедневный бюджет "+ appData.moneyPerDay);
 }
-detectDayBudget();
 
-alert("Ежедневный бюджет: " + appData.moneyPerDay);
+detectDayBudget();
 
 function detectLevel() {
     if (appData.moneyPerDay < 100) {
@@ -75,17 +73,8 @@ checkSavings();
 
 function chooseOptExpenses() {
     for (let i = 1; i <= 3; i++) {
-        let optionalExpensesItem = prompt('Введите не обязательную статью расходов в этом месяце', '');
-
-        if ((typeof (optionalExpensesItem)) === 'string' &&
-            typeof (optionalExpensesItem) != '' &&
-            typeof (optionalExpensesItem) != null &&
-            optionalExpensesItem.length < 50) {
-            console.log(`done optionalExpenses`);
-            appData.optionalExpenses[i] = optionalExpensesItem;
-        } else {
-            i--;
-        }
+        let opt = prompt("Статья необязательных расходов?", "");
+        appData.optionalExpenses[i] = opt;
     }
 }
 chooseOptExpenses();
