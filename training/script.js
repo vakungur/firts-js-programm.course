@@ -229,7 +229,7 @@ learnJS("JavaScript", function() {
 
 // Объекты
 
-let options = {
+/* let options = {
     width: 1024,
     height: 1024,
     name: "test",
@@ -249,4 +249,65 @@ for (let key in options) {
     console.log("Свойство " + key + " имеет значение " + options[key]);
 }
 
-console.log(Object.keys(options).length);
+console.log(Object.keys(options).length); */
+// Массивы
+
+// let arr = ["fist", 2, 3, 4, 5];
+
+// /* arr.pop();
+// arr.push("5");
+// arr.shift();
+// arr.unshift("1");
+// arr[99] = 99;
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+// console.log(arr); */
+
+// arr.forEach(function(item, i, mass){
+//     console.log(i + ": " + item + " (массив " + mass + ")");
+// });
+
+// console.log(arr);
+
+// let mass = [1, 3, 4, 6, 7,];
+
+// for (let key of mass){
+//     console.log(key);
+// }
+
+/* let ans = prompt("", ""),
+    arr = [];
+
+arr = ans.split(',');
+console.log(arr); */
+
+/* let arr = ['sacc', 'csacsac', 'cascsac'],
+    i = arr.join(', ');
+    console.log(i); */
+
+    /* let arr = ['sacc', 'csacsac', 'cascsac'],
+        i = arr.sort();
+    console.log(arr); */
+
+    /* let arr = [1, 15, 4],
+        i = arr.sort(compareNum);
+
+    function compareNum(a,b) {
+        return a-b;
+    }
+    console.log(arr); */
+
+    // ООП
+    let soldier = {
+        health: 400,
+        armor: 100
+    };
+
+    let john = {
+        health: 100
+    };
+
+    john.__proto__ = soldier;
+    console.log(john);
+    console.log(john.armor)
