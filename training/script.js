@@ -299,7 +299,7 @@ console.log(arr); */
     console.log(arr); */
 
     // ООП
-    let soldier = {
+    /* let soldier = {
         health: 400,
         armor: 100
     };
@@ -310,4 +310,6 @@ console.log(arr); */
 
     john.__proto__ = soldier;
     console.log(john);
-    console.log(john.armor)
+    console.log(john.armor) */
+
+    
