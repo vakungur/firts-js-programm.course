@@ -1,0 +1,12 @@
+button {
+    display: inline;
+    background-color: green;
+    color: black;
+    border: 1px solid goldenrod;
+    width: auto;
+    height: auto;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 15px;
+    margin: 20px;
+}
